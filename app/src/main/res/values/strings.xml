@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">WEIGH-DOWN</string>
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="goal_Weight_String">"Goal Weight: "</string>
+    <string name="goal_Weight_et_String">0</string>
+    <string name="weight_label_string">Weight:</string>
+    <string name="weights_label_string">Weights</string>
+    <string name="date_label_string">Date:</string>
+    <string name="clear_data_string">Clear Data</string>
+    <string name="logo_descriptor_string">The placeholder for the logo.</string>
+    <string name="fab_button_descriptor_string">A button to add a weight.</string>
+    <string name="request_sms_permissions">Request SMS Permissions</string>
+    <string name="edit_data">Edit Data</string>
+    <string name="no_weight_entries_found">No weight entries found</string>
+    <string name="editButton">Edit</string>
+    <string-array name="comparison_options">
+        <item>less than</item>
+        <item>equal to</item>
+        <item>greater than</item>
+    </string-array>
+</resources>

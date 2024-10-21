@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Text Styles -->
+    <style name="TextAppearance.CS360Project.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textColor">@color/tertiary</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextAppearance.CS360Project.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textColor">@color/tertiary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.CS360Project.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.CS360Project.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="Widget.CS360Project.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Base Application Theme -->
+    <style name="Base.Theme.CS360Project" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Color Scheme -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/primary</item>
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSurface">@color/background</item>
+
+        <!-- Text Colors -->
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textColorPrimary">@color/primary</item>
+        <item name="android:textColorSecondary">@color/tertiary</item>
+
+        <!-- Text Appearances -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.CS360Project.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.CS360Project.Headline2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.CS360Project.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.CS360Project.Body2</item>
+
+        <!-- Button Style -->
+        <item name="materialButtonStyle">@style/Widget.CS360Project.Button</item>
+    </style>
+
+    <!-- Main Application Theme -->
+    <style name="Theme.CS360Project" parent="Base.Theme.CS360Project">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

@@ -1,0 +1,184 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/topBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="-10dp"
+        android:background="@drawable/rounded_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_logo" />
+
+    <View
+        android:id="@+id/topBackground4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_rectangle"
+        app:layout_constraintBottom_toTopOf="@id/fab_add"
+        app:layout_constraintEnd_toEndOf="@id/scrollView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/scrollView"
+        app:layout_constraintTop_toTopOf="@id/tv_table_header"
+        app:layout_constraintVertical_bias="0.817" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="66dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo_descriptor_string"
+        android:src="@drawable/logo_drawable"
+        app:layout_constraintStart_toStartOf="@id/topBackground"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.CS360Project.Headline1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/topBackground"
+        app:layout_constraintEnd_toEndOf="@id/topBackground"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"
+        app:layout_constraintTop_toTopOf="@id/topBackground" />
+
+    <TextView
+        android:id="@+id/goal_weight_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/goal_Weight_String"
+        android:textAppearance="@style/TextAppearance.CS360Project.Body2"
+        app:layout_constraintStart_toStartOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    <EditText
+        android:id="@+id/et_goal_weight_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-16dp"
+        android:autofillHints="Input Weight"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:labelFor="@+id/goal_weight_id"
+        android:minHeight="48dp"
+        android:text="@string/goal_Weight_et_String"
+        android:textAppearance="@style/TextAppearance.CS360Project.Body2"
+        app:layout_constraintStart_toEndOf="@+id/goal_weight_id"
+        app:layout_constraintTop_toTopOf="@+id/goal_weight_id" />
+
+    <Spinner
+        android:id="@+id/spinner_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:entries="@array/comparison_options"
+        android:minHeight="48dp"
+        android:textAppearance="@style/TextAppearance.CS360Project.Body2"
+        app:layout_constraintStart_toEndOf="@+id/et_goal_weight_val"
+        app:layout_constraintTop_toTopOf="@+id/et_goal_weight_val" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/fab_button_descriptor_string"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_clear_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/clear_data_string"
+        style="@style/Widget.CS360Project.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fab_add" />
+
+    <TextView
+        android:id="@+id/tv_table_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/weights_label_string"
+        android:textAppearance="?attr/textAppearanceHeadline2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_goal_weight_val" />
+
+    <Button
+        android:id="@+id/btn_edit_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/edit_data"
+        style="@style/Widget.CS360Project.Button"
+        app:layout_constraintEnd_toStartOf="@+id/btn_clear_data"
+        app:layout_constraintTop_toTopOf="@+id/btn_clear_data" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/topBackground4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_table_header">
+
+        <TableLayout
+            android:id="@+id/table_weights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/weight_label_string"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/date_label_string"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
