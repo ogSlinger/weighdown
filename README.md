@@ -4,7 +4,7 @@
 ## CS 360 Project
 ## October 21, 2024
 
-![Alt text](https://i.imgur.com/dg8imKO.png)
+![Alt text](https://i.imgur.com/86HYIvA.png)
 
 - Briefly summarize the requirements and goals of the app you developed. What user needs was this app designed to address?
 
