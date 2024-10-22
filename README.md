@@ -1,4 +1,4 @@
-#Weigh Down
+# Weigh Down
 ## Derek Spaulding
 ## Southern New Hampshire University
 ## CS 360 Project
